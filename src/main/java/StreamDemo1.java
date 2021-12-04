@@ -1,6 +1,3 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -30,7 +27,7 @@ public class StreamDemo1 {
 
         // 数组的流操作
         String[] players1 = {"kobe", "james", "curry", "cyyt"};
-        
+        // 多维数组的流操作
         Arrays.stream(players1)
                 .flatMap(p -> Arrays.stream(p.split("")))
                 .forEach(System.out::println);
